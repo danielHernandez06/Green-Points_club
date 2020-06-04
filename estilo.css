@@ -1,0 +1,83 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 3em auto auto 3em;
+    grid-template-rows: 4em auto 4em;
+    gap: 0px 0px;
+    grid-template-areas: ". header header ." ". body body ." ". footer footer .";
+  }
+  
+  .header { grid-area: header; 
+}
+  
+  .body { grid-area: body;
+    background-color: #0e3453;
+}
+  
+  .footer { grid-area: footer; 
+    background-color: #0e3453;
+}
+.img{
+    float: right;
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+.img2{
+    float: right;
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+#color{
+    color: #5abe0f;
+}
+#color-p{
+    color: white;
+}
+body{
+    background-color: #0e3453;
+}
+.social-bar{
+	position: fixed; 
+	left: 0; 
+	top: 35%;
+    z-index: 100; 
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-whatsapp{
+    background: #25d366;
+}
+.icon-instagram{
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.icon-telegram{
+    background: #039be5;
+}
+.icon:first-child{
+    border-radius: 0 1rem 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 1rem 0 ;
+}
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="font.css">
+    <title>Green Points Club</title>
+    <link rel="icon" type="img" href="img/Icono.png">
+</head>
+<body>
+    <div class="grid-container">
+      <div class="header">
+        <nav class="navbar navbar-light navbar-expand-lg " style="background-color: #0e3453;">
+            <a class="navbar-brand" href="#" ><img src="img/Logo Nav.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="color" href="index.html">Inico <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="color" href="pronosticos.html">Pronosticos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="color" href="registrese.html">Registrese <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>       
+        </nav>
+    </div>
+        
+        <div class="body">
+            <div class="container-fluid">
+                <br><br>
+                <h2 class="text-monospace" id="color">Registrese</h2>
+                <p id="color-p">Los campos obligatorios estan marcados con *</p>
+            </div>
+            <form>
+                <div class="form-row">
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault01" id="color-p" >Primer Nombre *</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Primer Nombre" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault02" id="color-p">Segundo Nombre</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Segundo Nombre">
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault02" id="color-p">Primer Apellido *</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Primer Apellido" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault02" id="color-p">Segundo Apellido</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Segundo Apellido">
+                  </div>
+                </div>
+                <div class="form-row">                  
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault04" id="color-p">Sexo *</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled value="">Escoja...</option>
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>Indefinido</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault04" id="color-p">Tipo de Documento *</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled value="">Escoja...</option>
+                      <option>Cedula de Ciudadania</option>
+                      <option>Cedula de Extranderia</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault05" id="color-p">Nº Identificación *</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Documento de Identidad" required>
+                  </div>
+                </div>
+                <div class="form-row">                  
+                    <div class="col-md-3 mb-3">
+                        <label for="inputEmail4" id="color-p">Email *</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="inputEmail4" id="color-p">Confirmar Email *</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="inputPassword4" id="color-p">Contraseña *</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="inputPassword4" id="color-p">Confirmar Contraseña *</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
+                    </div>
+                    
+                </div>
+                <label align="justify" id="color-p">Terminos y Condiciones:</label><br>
+                <label align="justify" id="color-p">- Soy mayor de 18 años y he leído y aceptado los términos y condiciones generales de Green Points.</label><br>
+                <label align="justify" id="color-p">- Ley de Protección de Datos Personales: “La autorización suministrada en el presente formulario faculta a Green Points para que dé a sus datos aquí recopilados el tratamiento señalado en la “Política de Privacidad para el Tratamiento de Datos Personales” de Green Points, el cual incluye, entre otras, el envío de información promocional, así como la invitación a eventos. El titular de los datos podrá, en cualquier momento, solicitar que la información sea modificada, actualizada o retirada de las bases de datos de Green Points.</label>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2" id="color-p">
+                      Acepto los terminos y condiciones.
+                    </label>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </form>
+
+
+
+
+
+
+        
+            <div class="social-bar">
+                <a href="https://instagram.com/greenp_apuestas?igshid=1m0jz9jn0jhh9" class="icon icon-instagram" target="_blank"></a>
+                <a href="https://api.whatsapp.com/send?phone=573045765465" class="icon icon-whatsapp" target="_blank"></a>
+                <a href="https://t.me/joinchat/AAAAAElwtxr46Hwd4plksw" class="icon icon-telegram" target="_blank"></a>
+            </div>
+
+
+
+
+            
+        </div>
+        
+        <div class="footer">
+
+        </div>
+    </div>
+        
+    
+
+    
+<script src="Bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
