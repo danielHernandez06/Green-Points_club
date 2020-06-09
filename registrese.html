@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Bootstrap/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="font.css">
     <title>Green Points Club</title>
@@ -28,7 +28,7 @@
                         <a class="nav-link" id="color" href="pronosticos.html">Pronosticos <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" id="color" href="registrese.html">Registrese <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" style="background-color: #5abe0f;" id="color-p" href="registrese.html">Registrese <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>       
@@ -38,82 +38,85 @@
         <div class="body">
             <div class="container-fluid">
                 <br><br>
-                <h2 class="text-monospace" id="color">Registrese</h2>
-                <p id="color-p">Los campos obligatorios estan marcados con *</p>
+                <h2 class="font" id="color" style="font-size: 3em;">Registrese</h2>
+                <p id="color-p" class="font">Los campos obligatorios estan marcados con *</p>
             </div>
             <form>
                 <div class="form-row">
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault01" id="color-p" >Primer Nombre *</label>
+                    <label for="validationDefault01" class="font" id="color-p" >Primer Nombre *</label>
                     <input type="text" class="form-control" id="validationDefault01" placeholder="Primer Nombre" required>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault02" id="color-p">Segundo Nombre</label>
+                    <label for="validationDefault02" class="font" id="color-p">Segundo Nombre</label>
                     <input type="text" class="form-control" id="validationDefault02" placeholder="Segundo Nombre">
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault02" id="color-p">Primer Apellido *</label>
+                    <label for="validationDefault02" class="font" id="color-p">Primer Apellido *</label>
                     <input type="text" class="form-control" id="validationDefault02" placeholder="Primer Apellido" required>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault02" id="color-p">Segundo Apellido</label>
+                    <label for="validationDefault02" class="font" id="color-p">Segundo Apellido</label>
                     <input type="text" class="form-control" id="validationDefault02" placeholder="Segundo Apellido">
                   </div>
                 </div>
                 <div class="form-row">                  
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault04" id="color-p">Sexo *</label>
+                    <label for="validationDefault04" class="font" id="color-p">Sexo *</label>
                     <select class="custom-select" id="validationDefault04" required>
-                      <option selected disabled value="">Escoja...</option>
-                      <option>Masculino</option>
-                      <option>Femenino</option>
-                      <option>Indefinido</option>
+                      <option selected disabled class="font" value="">Escoja...</option>
+                      <option class="font">Masculino</option>
+                      <option class="font">Femenino</option>
+                      <option class="font">Indefinido</option>
                     </select>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault04" id="color-p">Tipo de Documento *</label>
+                    <label for="validationDefault04" class="font" id="color-p">Tipo de Documento *</label>
                     <select class="custom-select" id="validationDefault04" required>
-                      <option selected disabled value="">Escoja...</option>
-                      <option>Cedula de Ciudadania</option>
-                      <option>Cedula de Extranderia</option>
+                      <option selected disabled value="" class="font">Escoja...</option>
+                      <option class="font">Cedula de Ciudadania</option>
+                      <option class="font">Cedula de Extrangeria</option>
                     </select>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="validationDefault05" id="color-p">Nº Identificación *</label>
+                    <label for="validationDefault05" class="font" id="color-p">Nº Identificación *</label>
                     <input type="text" class="form-control" id="validationDefault05" placeholder="Documento de Identidad" required>
                   </div>
                 </div>
                 <div class="form-row">                  
-                    <div class="col-md-3 mb-3">
-                        <label for="inputEmail4" id="color-p">Email *</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="inputEmail4" id="color-p">Confirmar Email *</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="inputPassword4" id="color-p">Contraseña *</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="inputPassword4" id="color-p">Confirmar Contraseña *</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Contraseña">
-                    </div>
-                    
+                  <div class="col-md-3 mb-3">
+                      <label for="inputEmail4" class="font" id="color-p">Email *</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                   </div>
+                  <div class="col-md-3 mb-3">
+                      <label for="inputEmail4" class="font" id="color-p">Confirmar Email *</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required >
+                  </div>   
                 </div>
-                <label align="justify" id="color-p">Terminos y Condiciones:</label><br>
-                <label align="justify" id="color-p">- Soy mayor de 18 años y he leído y aceptado los términos y condiciones generales de Green Points.</label><br>
-                <label align="justify" id="color-p">- Ley de Protección de Datos Personales: “La autorización suministrada en el presente formulario faculta a Green Points para que dé a sus datos aquí recopilados el tratamiento señalado en la “Política de Privacidad para el Tratamiento de Datos Personales” de Green Points, el cual incluye, entre otras, el envío de información promocional, así como la invitación a eventos. El titular de los datos podrá, en cualquier momento, solicitar que la información sea modificada, actualizada o retirada de las bases de datos de Green Points.</label>
+                <div class="form-row">                  
+                  <div class="col-md-3 mb-3">
+                    <label for="validationDefault04" class="font" id="color-p">Grupo *</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled class="font" value="">Escoja...</option>
+                      <option class="font">Free</option>
+                      <option class="font">Premium</option>
+                    </select>
+                  </div>
+                </div>      
+                    
+                
+                <label align="justify" class="font" id="color-p" style="font-size: 1.2em;">Terminos y Condiciones:</label><br>
+                <label align="justify" class="font" id="color-p" style="font-size: 1.2em;">- Soy mayor de 18 años y he leído y aceptado los términos y condiciones generales de Green Points.</label><br>
+                <label align="justify" class="font" id="color-p" style="font-size: 1.2em;">- Ley de Protección de Datos Personales: “La autorización suministrada en el presente formulario faculta a Green Points para que dé a sus datos aquí recopilados el tratamiento señalado en la “Política de Privacidad para el Tratamiento de Datos Personales” de Green Points, el cual incluye, entre otras, el envío de información promocional, así como la invitación a eventos. El titular de los datos podrá, en cualquier momento, solicitar que la información sea modificada, actualizada o retirada de las bases de datos de Green Points.</label>
                 <div class="form-group">
-                  <div class="form-check">
+                  <div class="form-check" class="font">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                    <label class="form-check-label" for="invalidCheck2" id="color-p">
+                    <label class="form-check-label" for="invalidCheck2" class="font" id="color-p">
                       Acepto los terminos y condiciones.
                     </label>
                   </div>
                 </div>
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary" type="submit" class="font">Enviar</button>
               </form>
 
 
@@ -135,14 +138,14 @@
         </div>
         
         <div class="footer">
-
+          <center><small id="color-p">Developed by Green Points Engineers™ - 2020 ©</small></center>
         </div>
     </div>
         
     
 
     
-<script src="Bootstrap/js/jquery-3.5.1.min.js"></script>
+    <script src="Bootstrap/js/jquery-3.5.1.min.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'miFuente';
+    src: url(fonts/KGNeatlyPrinted.ttf);
+}
+.font{
+    font-family: 'miFuente';
+    font-size: 1.5em;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 3em auto auto 3em;
@@ -23,12 +31,11 @@
     margin-left: 1em;
     margin-bottom: 1em;
 }
-.img2{
+.img-der{
     float: right;
-    width: auto;
-    height: auto;
-    margin-left: 1em;
-    margin-bottom: 1em;
+}
+.img-iz{
+    float: left;
 }
 #color{
     color: #5abe0f;
@@ -47,12 +54,12 @@ body{
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .icon{
     color: white;
     text-decoration: none;
-    padding: .5rem;
+    padding: .6rem;
     display: flex;
     transition: all .5s;
 }
@@ -75,9 +82,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 .icon:last-child{
     border-radius: 0 0 1rem 0 ;
 }
-
-
-
-
-
-
+.icon:hover{
+    padding-left: 3rem;
+    border-radius: 0 1rem 1rem 0 ;
+    box-shadow:  0 0 .5rem  rgba(0, 0, 0, 0.42);
+    color: white;
+}
+.img12{
+	width: 80%;
+}
